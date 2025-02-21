@@ -6,10 +6,12 @@
 Familiarizarea cu sistemul de control al codului GIT.
 
 ## Etapele realizării lucrării
+
 ### Registrarea contului GitHub
+Am accesat site-ul GitHub. Am completat formularul de înregistrare, apoi am apăsat pe butonul `Sing up`. După completarea formularului, am verificat adresa de email prin intermediul unui link trimis de GitHub pe email. După verificare, am setat preferințele contului, apoi am apăsat butonul `Create account` și astfel am creat contul GitHub.
 
 ### Crearea unui proiect
-După autentificare pe GitHub, în colțul din dreapta sus există un buton `+`. Apăsând pe el, am creat un repozitoriu nou, cu numele de conectare la GITHUB.
+După autentificare pe GitHub, în colțul din dreapta sus există un buton `+`. Apăsând pe el, am creat un repozitoriu nou, cu numele de conectare la GitHub.
 
 ![new repo](./images/image01.png)
 
@@ -24,17 +26,13 @@ Am deschis linia de comandă, am navigat în directorul în care am dorit să p�
 git clone git@github.com:CovrigAndrei/CovrigAndrei.git
 ```
 ![repo clone](./images/image03.png)
-Creați o nouă ramură și treceți la ea.
 
-```bash
-# create a new branch and switch to
-git checkout -B lab01
-```
 ### Crearea structurii fișierelor
 În directorul proiectului am adăugat următoarele fișiere:
 
 1. `readme.md` - descrierea proiectului
 2. `images` - un director pentru stocarea imaginilor
+
 ### Adăugarea descrierii proiectului
 În fișierul `readme.md` am adăugat:
 1. Salutare
@@ -50,21 +48,29 @@ git checkout -B lab01
 ### Publicarea codului pe GitHub
 
 În directorul repozitoriului, am executat următoarele comenzi din linia de comandă:
-
+```bash
+# check status
+git status
+```
+![git add](./images/image07.png)
 ```bash
 # add all files to tracking
 git add *
-# check status
-git status
+```
+![git add](./images/image04.png)
+```bash
 # create a commit
 git commit -m "structure defined"
+```
+![git add](./images/image05.png)
+```bash
 # push commit to remote repository
 git push
 ```
+![git add](./images/image06.png)
 
-## Concluzii.
+## Concluzii
+Git este un sistem de control al versiunilor distribuit, care ne permite să urmărim modificările aduse codului, să colaborăm cu alții și să revenim la versiunile anterioare dacă ceva nu a mers bine. Spre deosebire de sistemele centralizate, Git permite fiecărui utilizator să aibă o copie completă a istoricului proiectului.
 
-## Bibliografie.
-1. [QEMU virtualization, calculate-linux.org, 2020-01-24](https://wiki.calculate-linux.org/qemu)
-2. [Welcome to QEMU’s documentation!, qemu.org](https://www.qemu.org/docs/master/)
-3. [virtual machine manager, virt-manager.org](https://virt-manager.org/)
+## Bibliografie
+1. [GitHub Docs, docs.github.com](https://docs.github.com/en)
